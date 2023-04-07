@@ -1,0 +1,14 @@
+{
+  "trailingSlash": false,
+  "rewrites":
+  [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/entrypoint.go"
+    },
+    {
+      "source": "/.well-known/nostr.json",
+      "destination": "/api/entrypoint.go"
+    }
+  ]
+}
